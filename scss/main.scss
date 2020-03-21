@@ -257,7 +257,7 @@ main {
                 font-size: 18px;
                 font-weight: 600;
                 color: #999;
-                letter-spacing: 5px;
+                letter-spacing: 3px;
 
                 padding-right: 25%;
                 padding-left: 25%;
@@ -319,6 +319,8 @@ main {
         padding-top: 100px;
         padding-bottom: 100px;
         text-align: center;
+        height: auto;
+        overflow: hidden;
 
         p {
             font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
@@ -331,7 +333,7 @@ main {
 
         .galeria {
             width: 100%;
-            height: 150px;
+            height: auto;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
@@ -374,7 +376,7 @@ main {
 
         &:hover{
             background: linear-gradient(45deg, $light-logo 0%, $dark-logo 100%);
-            box-shadow: inset 0px 0px 15px 10px #000000bf;
+            box-shadow: inset 0px 0px 15px 10px #00000069;
         }
 
         p{
@@ -502,9 +504,9 @@ main {
     .kontakt {
 
         p{
-            font-size: 26px !important;
+            font-size: 3vw !important;
             top: 50%;
-            left: 15% !important;
+            left: 8% !important;
             transform: translate(-10%, -50%);
         }
 
