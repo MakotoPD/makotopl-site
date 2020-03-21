@@ -292,7 +292,7 @@ header .nm .night_mode_btn:hover {
 
 @media (max-width: 1200px) {
   header img {
-    left: 150px;
+    left: 50px;
   }
   header nav {
     top: 35px;
