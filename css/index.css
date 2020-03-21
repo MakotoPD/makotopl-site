@@ -758,6 +758,9 @@ main .kontakt {
   position: relative;
   transition: 0.3s;
 }
+main .kontakt:hover {
+  background: linear-gradient(45deg, #00ff97 0%, #00999d 100%);
+}
 main .kontakt p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, sans-serif;
   font-size: 36px;
@@ -789,10 +792,6 @@ main .kontakt button {
 }
 main .kontakt button:hover {
   transform: translate(20%, -60%);
-}
-main .kontakt:hover {
-  background: linear-gradient(45deg, #00ff97 0%, #00999d 100%);
-  box-shadow: inset 0px 0px 35px 10px #000000bf;
 }
 
 @keyframes circle_jump {
