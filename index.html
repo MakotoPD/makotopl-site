@@ -13,13 +13,17 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <script data-ad-client="ca-pub-7443176231652937" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
 </head>
 <body>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
 
     <div class="mobile">
 
@@ -291,6 +295,14 @@
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/night_mode.js"></script>
+
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").attr("style", "opacity:0")
+            setTimeout(expload, 1000)
+            $(".loader-wrapper").fadeOut('slow')
+        });
+    </script>
     
 </body>
 </html>
