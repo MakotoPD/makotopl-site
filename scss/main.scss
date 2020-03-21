@@ -368,11 +368,13 @@ main {
         background-color: cadetblue;
         background: linear-gradient(45deg, $dark-logo 0%, $light-logo 100%);
         position: relative;
+        margin-top: 100px;
 
         transition: .3s;
 
         &:hover{
             background: linear-gradient(45deg, $light-logo 0%, $dark-logo 100%);
+            box-shadow: inset 0px 0px 15px 10px #000000bf;
         }
 
         p{
