@@ -43,6 +43,8 @@
     height: 100vh;
     background-color: #00000056;
     backdrop-filter: blur(5px);
+    
+    transition: .3s;
 }
 
 .bottom_menu{
