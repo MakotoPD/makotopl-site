@@ -250,6 +250,21 @@ header {
     }
 }
 
+@media (max-width:1200px) {
+
+    header{
+        img {
+            left: 150px;
+        }
+    
+        nav{
+            top: 35px;
+        }
+    }
+
+
+}
+
 @media (max-width:1080px) {
 
     header {

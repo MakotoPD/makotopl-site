@@ -244,6 +244,7 @@ header img {
   left: 200px;
   top: 10px;
   max-height: 70px;
+  transition: 0.2s;
 }
 header nav {
   position: absolute;
@@ -253,6 +254,7 @@ header nav {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
+  transition: 0.2s;
 }
 header nav a p {
   display: inline-block;
@@ -290,6 +292,14 @@ header .nm .night_mode_btn:hover {
   background-color: #acacac;
 }
 
+@media (max-width: 1200px) {
+  header img {
+    left: 150px;
+  }
+  header nav {
+    top: 35px;
+  }
+}
 @media (max-width: 1080px) {
   header {
     width: 100%;
