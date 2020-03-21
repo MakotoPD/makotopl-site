@@ -1,0 +1,440 @@
+main {
+    width: 100%;
+    height: auto;
+
+    #start {
+        width: 100%;
+        height: 60vh;
+        background-color: #00725f;
+        background-image: url('../img/bryly.png');
+        background-size: cover;
+        background-attachment: fixed;
+
+        position: relative;
+
+        img {
+            width: 30%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h3{
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translateX(-50%);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #eee;
+        }
+
+        svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            fill: #fff;
+            width: 100%;
+        }
+    }
+
+    .next {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: auto;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+
+        .title{
+            padding: 50px 0;
+            text-transform: uppercase;
+            font-size: 26px;
+            color: $dark;
+        }
+
+        .zamowienie{
+            width: 20%;
+            min-width: 280px;
+            min-height: 600px;
+            margin: 20px 10px;
+            border-radius: 25px;
+            background: linear-gradient(to bottom, $light-blue 0%, $dark-blue 100%);
+            position: relative;
+            transition: .3s;
+            overflow: hidden;
+            cursor: default;
+
+            .selected {
+                z-index: 10;
+                width: 180px;
+                height: 32px;
+                padding: 0 20px;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: center;
+                color: #00a060;
+                font-weight: bold;
+                background: $light-logo;
+                //background: #palegoldenrod;
+                transform: rotate(35deg);
+                position: absolute;
+                right: -60px;
+                top: 20px;
+              }
+
+            .name{
+                padding-top: 50px;
+                padding-bottom: 50px;
+                font-size: 120%;
+                color: #fff;
+            }
+
+            .price {
+                width: 100%;
+                height: auto;
+                padding: 20px 0;
+                text-align: center;
+                background-color: #40d5e9;
+                box-shadow:
+                    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                    0 12.5px 10px rgba(0, 0, 0, 0.06),
+                    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                    0 100px 80px rgba(0, 0, 0, 0.12);
+            }
+
+            .best {
+                background-color: #40e9a8;
+            }
+
+            .atuty_price{
+                width: 100%;
+                height: 100%;
+                padding: 20px 0;
+                text-align: center;
+
+                span{
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+
+                p{
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #222;
+                }
+
+                hr{
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: $dark;
+                    border: solid 1px #006f77;
+                    margin-bottom: 15px;
+                }
+
+                .fa-check {
+                    color: #00ff37;
+                }
+
+                .fa-times{
+                    color: #f00;
+                }
+
+            }
+
+            .button_price{
+                width: 100%;
+                height: auto;
+                padding-top: 10px;
+                padding-bottom: 50px;
+
+                button{
+                    width: 45%;
+                    height: 50px;
+                    border: none;
+                    border-radius: 25px;
+                    background-color: $light-logo;
+                    color: #000;
+                    font-size: 20px;
+                    transition: .1s;
+                    cursor: pointer;
+                }
+
+                button:hover{
+                    background-color: $light-blue;
+                    color: #333333;
+                    box-shadow:
+                    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                    0 12.5px 10px rgba(0, 0, 0, 0.06);
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+        .zamowienie:hover{
+            transform: translateY(-2%);
+            transform: scale(1.05);
+        }
+
+
+        /*****************************************************************************/
+        /*****************************************************************************/
+        /*********************************Formularz***********************************/
+        /*****************************************************************************/
+        /*****************************************************************************/
+
+        .form{
+            width: 70%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 0;
+            position: relative;
+
+            form{
+                width: 90%;
+                margin: 0 auto;
+                position: relative;
+
+                #imie{
+                    width: 43%;
+                    height: 25px;
+                    margin: 1% 1%;
+                    font-size: 18px;
+                    border: solid 0px #222;
+                    border-bottom-width: 1px;
+                    transition: .1s;
+                }
+                #imie:focus{
+                    border-bottom: solid 2px $dark-blue;
+                }
+                #nazwisko{
+                    width: 43%;
+                    height: 25px;
+                    margin: 1% 1%;
+                    font-size: 18px;
+                    border: solid 0px #222;
+                    border-bottom-width: 1px;
+                }
+                #nazwisko:focus{
+                    border-bottom: solid 2px $dark-blue;
+                }
+                #email{
+                    width: 89%;
+                    height: 25px;
+                    margin: 1% 5%;
+                    font-size: 18px;
+                    border: solid 0px #222;
+                    border-bottom-width: 1px;
+                }
+                #email:focus{
+                    border-bottom: solid 2px $dark-blue;
+                }
+                #wiadomosc{
+                    width: 89%;
+                    min-height: 125px;
+                    margin: 1% 5%;
+                    font-size: 18px;
+                    resize: vertical;
+                    border: solid 1px #222;
+                }
+
+                .send_message{
+                    width: 150px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 25px;
+                    background-color: $light-logo;
+                    color: #000;
+                    font-size: 20px;
+                    transition: .1s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .adsense{
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .contact{
+        position: relative;
+        min-height: 400px;
+        background-color: #222;
+        text-align: center;
+        svg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-97%);
+        }
+
+        h1{
+            padding-top: 50px;
+            font-size: 48px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        p{
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .kont{
+            padding: 10px;
+
+            a{
+                color: #fff;
+            }
+            a:hover {
+                color: #aaa;
+            }
+        }
+    }
+
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/******************************************************************************************************/
+/******************************************************************************************************/
+/******************************************************************************************************/
+
+@media (max-width:1080px ){
+    main{
+        #start {
+            img {
+                width: 80%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .scroll_down{
+                position: absolute;
+                left: 50%;
+                bottom: 20px;
+                transform: translateX(-50%);
+                z-index: 9999;
+
+                width: 40px;
+                height: 40px;
+
+                .scroll{
+                    width: 100%;
+                    height: 100%;
+                    filter: invert(1);
+                    animation: scroll 2s infinite ease-in-out;
+                }
+            }
+        }
+
+    }
+}
+
+
+/******************************************************************************************************/
+/******************************************************************************************************/
+/******************************************************************************************************/
+
+@media (max-width:600px ){
+    main{
+        #start {
+            img {
+                width: 80%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .scroll_down{
+                position: absolute;
+                left: 50%;
+                bottom: 20px;
+                transform: translateX(-50%);
+                z-index: 9999;
+
+                width: 40px;
+                height: 40px;
+
+                .scroll{
+                    width: 100%;
+                    height: 100%;
+                    filter: invert(1);
+                    animation: scroll 2s infinite ease-in-out;
+                }
+            }
+        }
+
+
+        .next {
+            width: 100%;
+
+            .title{
+                font-size: 20px;
+            }
+
+            .form{
+                width: 90%;
+                form{
+                    width: 100%;
+
+                    br{
+                        display: none;
+                    }
+
+                    #imie{
+                        display: block;
+                        margin: 1% 5%;
+                        width: 89%;
+                    }
+
+                    #nazwisko{
+                        display: block;
+                        margin: 1% 5%;
+                        width: 89%;
+                        margin-top: 10px;
+                    }
+
+                    #email{
+                        margin-top: 10px;
+                    }
+
+                    #wiadomosc {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

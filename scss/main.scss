@@ -1,0 +1,689 @@
+main {
+    width: 100%;
+    height: auto;
+
+    #start {
+        width: 100%;
+        height: 60vh;
+        background-color: #00725f;
+        background-image: url('../img/bryly.png');
+        background-size: cover;
+        background-attachment: fixed;
+
+        position: relative;
+
+        img {
+            width: 30%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            fill: #fff;
+            width: 100%;
+        }
+    }
+
+    .short_info {
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        position: relative;
+
+        .container_info {
+            position: absolute;
+            left: 50%;
+            top: -45%;
+            transform: translateX(-50%);
+            min-height: 300px;
+            height: auto;
+            min-width: 280px;
+            max-width: 1140px;
+            width: 90vw;
+            text-align: center;
+
+
+            .box_info {
+                width: 30%;
+                min-width: 250px;
+                height: 100%;
+                margin-left: 1%;
+                margin-right: 1%;
+                border-radius: 25px;
+                transition: .3s;
+                position: relative;
+                text-align: center;
+
+                .blank {
+                    width: 150px;
+                    height: 150px;
+                    margin: 20px;
+                }
+
+                .circle {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 100%;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 50%;
+                    top: 5%;
+                    transform: translateX(-50%);
+
+                    i {
+                        color: $dark-blue;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: .3s;
+                    }
+                }
+
+                .circle:hover {
+
+                    animation: circle_jump 2s linear;
+
+                    i {
+                        color: $light-blue;
+                    }
+                }
+
+                h4 {
+                    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                }
+
+                p {
+                    margin-top: 30px;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    color: #999;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .box_info:hover {
+                transform: translateY(-10%);
+                box-shadow:
+                    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                    0 12.5px 10px rgba(0, 0, 0, 0.06),
+                    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                    0 100px 80px rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
+
+    .why_me {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+        
+        h4 {
+            font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #999;
+        }
+
+        h1 {
+            font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 5px;
+            font-size: 48px;
+            max-width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            color: #000;
+        }
+
+        p {
+            
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #999;
+            font-size: 14px;
+            max-width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        .container_buttons {
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            div {
+                
+                button{
+                    min-width: 150px;
+                    min-height: 50px;
+                    font-size: 18px;
+
+                    background: linear-gradient(45deg, $dark-blue 0%, $light-blue 100%);
+                    box-shadow: 0px 8px 44px -15px $light-blue;
+                    border: none;
+                    border-radius: 10px;
+                    color: #eee;
+
+                    transition: .3s;
+                }
+
+                button:hover {
+                    transform: translateY(-10%);
+                    filter: brightness(.9);
+                }
+            }
+        }
+    }
+
+    .container_modern {
+        width: 100%;
+        height: 500px;
+        background-color: $dark-logo;
+        background-image: url(../img/bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+
+        text-align: center;
+
+        .modern {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h1{
+                font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+                text-transform: uppercase;
+                font-size: 44px;
+                font-weight: 900;
+                color: #fff;
+            }
+
+            p {
+                padding-top: 20px;
+                font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 600;
+                color: #fff;
+                letter-spacing: 10px;
+            }
+        }
+        
+
+        svg {
+            max-width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .container_atuty {
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+
+        .mzal {
+
+            margin-bottom: 100px;
+
+            h1 {
+                font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+                text-transform: uppercase;
+                font-size: 44px;
+                font-weight: 900;
+                color: #000;
+            }
+            p {
+                padding-top: 20px;
+                font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 600;
+                color: #999;
+                letter-spacing: 5px;
+
+                padding-right: 25%;
+                padding-left: 25%;
+            }
+        }
+
+        .zalety{
+
+            padding-bottom: 100px;
+
+            .elem{
+                width: 25%;
+                min-width: 280px;
+                height: 200px;
+                position: relative;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                .icon {
+                    height: 200px;
+                    width: 39%;
+                    border-right: solid 2px #999;
+                    border-radius: 50%;
+                    position: relative;
+
+                    object {
+                        width: 60%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+
+                        fill: #0c6154;
+                        filter: invert(0.2) sepia(1) hue-rotate(150deg);
+                    }
+                }
+
+                .text {
+                    height: 100%;
+                    width: 59%; 
+                    position: relative;
+
+                    p {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .praca_z{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+
+        p {
+            font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 600;
+            color: #999;
+            letter-spacing: 5px;
+        }
+
+        .galeria {
+            width: 100%;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            .obrazki {
+                img{
+                    height: 100px;
+                    padding-top: 25px;
+                    padding-right: 25px;
+                    padding-left: 25px;
+
+                    filter: grayscale(.7);
+                    transition: .3s;
+                }
+
+                img:hover {
+                    filter: grayscale(0);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .adsense{
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .kontakt {
+        width: 100%;
+        height: 250px;
+        background-color: cadetblue;
+        background: linear-gradient(45deg, $dark-logo 0%, $light-logo 100%);
+        position: relative;
+
+        transition: .3s;
+
+        p{
+            font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+            font-size: 36px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 5px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-10%, -50%);
+        }
+
+        button{
+            width: 200px;
+            height: 70px;
+            font-size: 24px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #fff;
+            background: none;
+            border: solid 3px #fff;
+            
+            box-shadow: 0px 10px 20px 10px #00000031;
+
+            position: absolute;
+            right: 20%;
+            top: 50%;
+            transform: translate(20%, -50%);
+
+            transition: .3s;
+        }
+
+        button:hover{
+            transform: translate(20%, -60%);
+        }
+    }
+
+    .kontakt:hover{
+        background: linear-gradient(45deg, $light-logo 0%, $dark-logo 100%);
+        box-shadow: inset 0px 0px 35px 10px #000000bf;
+    }
+
+}
+
+
+@keyframes circle_jump {
+    0%{
+        transform: translate(-50%, 0%);
+    }
+    10%{
+        transform: translate(-50%, 5%);
+    }
+    20%{
+        transform: translate(-50%, -5%);
+    }
+    30%{
+        transform: translate(-50%, 2%);
+    }
+    40%{
+        transform: translate(-50%, -1%);
+    }
+    50%{
+        transform: translate(-50%, 0%);
+    }
+    100%{
+        transform: translate(-50%, 0%);
+    }
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/******************************************************************************************************/
+/******************************************************************************************************/
+/******************************************************************************************************/
+
+@media (max-width:1080px ){
+    main{
+        #start {
+            img {
+                width: 80%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .scroll_down{
+                position: absolute;
+                left: 50%;
+                bottom: 20px;
+                transform: translateX(-50%);
+                z-index: 9999;
+
+                width: 40px;
+                height: 40px;
+
+                .scroll{
+                    width: 100%;
+                    height: 100%;
+                    filter: invert(1);
+                    animation: scroll 2s infinite ease-in-out;
+                }
+            }
+        }
+
+        .short_info {
+            width: 100%;
+            min-height: 300px;
+            height: auto;
+            height: auto;
+            position: relative;
+            margin-bottom: 100px;
+        }    
+    }
+
+    .kontakt {
+
+        p{
+            font-size: 26px !important;
+            top: 50%;
+            left: 15% !important;
+            transform: translate(-10%, -50%);
+        }
+
+        button{
+            position: absolute;
+            right: 10% !important;
+            top: 50%;
+            transform: translate(20%, -50%);
+        }
+    }
+}
+
+
+/******************************************************************************************************/
+/******************************************************************************************************/
+/******************************************************************************************************/
+
+@media (max-width:600px ){
+    main{
+        #start {
+            img {
+                width: 80%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .scroll_down{
+                position: absolute;
+                left: 50%;
+                bottom: 50px;
+                transform: translateX(-50%);
+                z-index: 9999;
+
+                width: 40px;
+                height: 40px;
+
+                .scroll{
+                    width: 100%;
+                    height: 100%;
+                    filter: invert(1);
+                    animation: scroll 2s infinite ease-in-out;
+                }
+            }
+        }
+
+        .short_info {
+            width: 100%;
+            min-height: 300px;
+            height: auto;
+            height: auto;
+            position: relative;
+            margin-bottom: 700px;
+
+            .container_info{
+                top: -20%;
+
+                .box_info{
+                    margin-bottom: 20px;
+                }
+            }
+        }  
+
+        .praca_z{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+    
+            .galeria { 
+                height: auto;
+
+                .obrazki {
+                    img{
+                        height: auto;
+                        width: 70%;
+                        height: none;
+    
+                        filter: grayscale(.7);
+                        transition: .3s;
+                    }
+    
+                    img:hover {
+                        filter: grayscale(0);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .container_modern {
+    
+            .modern {
+    
+                h1{
+                    font-size: 28px;
+                }
+            }
+        }
+        
+        .container_atuty {
+
+            .zalety{
+    
+                .elem{
+                    width: 95%;
+                    min-width: 300px;
+                    height: 150px;
+                    position: relative;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    .icon {
+                        height: 150px;
+                        width: 32%;
+    
+                        object {
+                            height: 70px;
+                        }
+                    }
+
+                    .text {
+                        height: 150px;
+                        width: 60%; 
+                        position: relative;
+    
+                        p {
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+    
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .why_me {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            width: 100%;
+            height: auto;
+    
+            text-align: center;
+    
+            h1 {
+                letter-spacing: 5px;
+                font-size: 32px;
+                max-width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                color: #000;
+            }
+    
+            p {
+                max-width: 90%;
+            }
+        }
+
+        .kontakt {
+            height: 400px;
+
+            p{
+                font-size: 26px !important;
+                top: 20% !important;
+                left: 20% !important;
+                transform: translate(-10%, -50%);
+            }
+    
+            button{
+                position: absolute;
+                right: 30% !important;
+                bottom: 5% !important;
+                transform: translate(20%, -50%);
+            }
+        }
+    }
+}
