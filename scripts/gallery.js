@@ -197,6 +197,18 @@ $('.obraz26').click(function () {
     $('.inne1').css({"transform":"scale(1)"});
 })
 
+$('.obraz27').click(function () {
+    $('.obraz27').toggleClass('zoom_obraz');
+    $('.inne1').toggleClass('zoom_img');
+    $('.inne1').css({"transform":"scale(1)"});
+})
+
+$('.obraz28').click(function () {
+    $('.obraz28').toggleClass('zoom_obraz');
+    $('.inne1').toggleClass('zoom_img');
+    $('.inne1').css({"transform":"scale(1)"});
+})
+
 $('.obraz').click( function () {
     $('.bg_for_img').toggleClass('bg_for_img_active');
 })
