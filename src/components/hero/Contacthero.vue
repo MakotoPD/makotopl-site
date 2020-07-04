@@ -11,7 +11,7 @@
                 <div class="form">
                     <h1>Formularz kontaktowy</h1>
                     <form action="https://formspree.io/xleppbje" method="POST">
-                        <input type="email" id="email" placeholder="e-mail"><br>
+                        <input type="email" name="_replyto" id="email" placeholder="e-mail"><br>
                         <input type="text" name="firstname" id="fn" placeholder="Imię"><br>
                         <textarea name="message" id="mess" placeholder="Wiadomość"></textarea><br>
                         <input type="submit" id="send" value="Wyślij">
