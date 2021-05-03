@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+input{
+    outline: none;
+}
+
+
+.left-full.active{
+    left: 0 !important;
+}
+
+.left-full{
+    transition: .3s;
+}
+
+
+.activePage{
+    font-weight: 800;
+}
+
+
+.navbarLink{
+    transition: .1s;
+}
+
+.navbarLink:hover{
+    font-weight: 800;
+}
+
+.hero{
+    height: 600px;
+}
+
+@media (max-width: 640px) {
+    .hero{
+        height: 300px !important;
+    }
+
+}
+
+.sectionPortfolio{
+    height: 800px;
+}
+
+.portfolioBg{
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    box-shadow: 0 25px 50px -12px rgba(0, 248, 236, 0.404);
+}
+
+
+.portfolioBg button{
+    transition: .1s;
+}
+
+.portfolioBg button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.247);
+}
+
+.subBg{
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    box-shadow: 0 25px 50px -12px rgba(190, 0, 248, 0.404);
+}
+
+.subBtn{
+    transition: .1s;
+}
+
+.subBtn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.247);
+}
+
+.goHome{
+    transition: .1s
+}
+
+.goHome:hover{
+    transform: scale(1.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.247);
+}
+
+
+.slick-slide{
+    margin: 0 4rem;
+}
+
+.somePosts{
+    height: 27rem;
+    white-space: nowrap;
+}
+
+.wrap{
+    white-space: normal;
+}
+
+.someWebs{
+    transition: .1s
+}
+
+.someWebs:hover{
+    filter: grayscale(0)
+}
+
+
+.somePosts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.somePosts::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.somePosts::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 100px;
+}
+
+.somePosts::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.visibleSub{
+    opacity: 1 !important;
+}
+
+.sub{
+    transition: .2s;
+}

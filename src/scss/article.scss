@@ -1,0 +1,116 @@
+
+@media (min-width:1024px) {
+    .container{
+        .hideImage{
+            position: relative;
+            top: -100px;
+            border-radius: 35pt;
+            padding: 100px 15rem !important;
+        }
+    }
+
+    .content{
+        img{
+            height: 400px;
+            width: auto;
+        }
+    }
+}
+
+.container{
+    .hideImage{
+        background-color: white;
+        position: relative;
+        top: -100px;
+        border-radius: 35pt;
+        padding: 100px 1rem;
+
+        .articleTitle{
+            margin: 0;
+        }
+
+
+        .createdAt{
+            text-align: right;
+        }
+    }
+}
+.content{
+    hr{
+        border-color: #0091ff62;
+    }
+    
+    blockquote {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-block-start: 1em;
+        padding-block-end: 1em;
+        padding-inline-start: 40px;
+        padding-inline-end: 40px;
+        border-left-width: 2px;
+        border-left-style: solid;
+        border-color: #0091ffbb;
+        
+    }
+    
+    li::marker{
+        color: #0091ffbb;
+    }
+    
+    code{
+        font-size: 1em;
+        background-color: #ffeff0;
+        padding: 2px 2px;
+        font-weight: 600;
+        white-space : pre-wrap !important;
+    }
+
+    pre{
+        color: #72e0d1;
+        background-color: #2b3542;
+        border-radius: 10px;
+        padding: 10px 10px;
+        width: 100%;
+        white-space : pre-wrap !important;
+        
+        code{
+            color: unset;
+            font-size: 1.2em;
+            background-color: unset;
+            padding: unset;
+        }
+    }
+    
+    
+    
+    table {
+        border-spacing: 0px;
+    }
+    
+    th{
+        border: 1px solid #0091ff;
+        margin: 0;
+    }
+    td{
+        border: 1px solid #005392;
+        margin: 0;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #006eff;
+        white-space : pre-wrap !important;
+    }
+
+    ol{
+        list-style-type: decimal;
+        
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
