@@ -22,6 +22,17 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-image",
     {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Poppins',
+            weights: ['100...900']
+          }
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-sharp`,
       options: {
           defaults: {

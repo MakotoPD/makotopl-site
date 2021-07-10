@@ -62,7 +62,7 @@ const IndexPage = ({ data }) => {
         <div className="block xl:flex container mx-auto xl:items-center pt-24 pb-4 xl:py-36">
 
           <div className="xl:flex-1 pl-4 sm:pl-8">
-            <h4 className="sm:p-8 text-blue-500 text-xl font-medium">- be modern</h4>
+            <h4 className="sm:p-8 text-blue-500 text-xl font-semibold">- be modern</h4>
             <h2 className="pb-8 text-4xl font-extrabold text-gray-800">I can take your buisness<br /> to the next level</h2>
             <p className="text-lg">
               With a well-developed marketing plan and the right logo, <br />
@@ -123,8 +123,8 @@ const IndexPage = ({ data }) => {
 
         <div className="container mx-auto">
           <div>
-            <div className=" sm:h-64 pl-4 sm:pl-16 mb-8">
-              <h4 className="pb-8 text-blue-500 text-xl font-medium">
+            <div className=" sm:h-64 pl-4 sm:pl-8 mb-8">
+              <h4 className="sm:p-8 text-blue-500 text-xl font-semibold">
                 - Look at the news
               </h4>
               <h2 className="pb-8 text-4xl font-extrabold text-gray-800">
@@ -160,7 +160,7 @@ const IndexPage = ({ data }) => {
 
         <div className="container mx-auto">
           <div className="sm:h-44 pl-4 sm:pl-16">
-            <h4 className="pb-8 text-blue-500 text-xl font-medium">
+            <h4 className="sm:p-8 text-blue-500 text-xl font-semibold">
               - Trust
             </h4>
             <h2 className="pb-8 text-4xl font-extrabold text-gray-800">
